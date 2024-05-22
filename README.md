@@ -28,10 +28,10 @@ Test case: allItems = [new Item("Item1", "12345", 100, -1f)], payment = 100 - 1-
 
 5.Тест случаи за Multiple Condition:
 
-а)350;0.2;12345 - враќа false, TTF
+а)"12345", 350, 0.2f - враќа false, TTF
 
-б)350;0;12345 - враќа false, TFF
+б)"12345", 350, 0 - враќа false, TFF
 
-в)350;0.2;01234 - враќа true, TTT
+в)"01234", 350, 0.2f - враќа true, TTT
 
-г)100;0.2;01234 -> враќа false FTT
+г)"01234", 100, 0.2f -> враќа false FTT
